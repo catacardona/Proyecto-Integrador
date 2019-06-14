@@ -1,0 +1,143 @@
+*{box-sizing: border-box;}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial;
+  font-size: 12px;
+  color: white;
+  background-color: #2d2f33;
+  height: 100vh;
+}
+
+main {
+  background-color: #2d2f33;
+}
+.principal {
+  display: block;
+}
+
+header nav {
+  background-color: #000;
+  width: 100%;
+  height: 70px;
+  z-index: 9;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px #3d4044;
+  top: 0;
+}
+nav {
+  overflow: hidden;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul.ul-logo {
+  float: left;
+}
+
+div.menu-1 {
+  float: left;
+}
+
+div.menu-2 {
+  float: right;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 23px 12px 0 12px;
+  float: left;
+  list-style-type: none;
+  font-size: 17px;
+  height: 70px;
+  color: white;
+}
+nav ul li.logo {
+  background-image: url(../imagenes/iwatch2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+}
+nav ul.ul-menu {
+  margin-left:
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li:hover{
+	font-weight: bold;
+}
+
+footer {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px #3d4044;
+  bottom: 0;
+  overflow: hidden;
+}
+
+footer div.nombres {
+  float: right;
+}
+
+footer div.logoTMDB{
+  float: left;
+  background-image: url(../imagenes/logotmdb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+}
+main.ul.populares {
+  margin-right: 20px;
+}
+
+.carrousel {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carrousel2 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carrousel3 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul.listacarrousel {
+  height: 600px;
+  margin-bottom: 70px;
+}
+
+main ul {
+  font-family: Arial;
+  color: #f2f2f2;
+}
+main ul.generos{
+  font-size: 20px;
+  list-style: none;
+}
+
+
+main ul p {
+  margin-top: 10px;
+  margin-left: 0px;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ul li.generos2:hover {
+	text-decoration: underline;
+}

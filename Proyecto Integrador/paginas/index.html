@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Watch</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="principal">
+      <header>
+        <nav>
+          <ul>
+              <li class="logo"></li>
+          </ul>
+          <ul class="ul-menu">
+            <div class="menu-1">
+              <li class="li-menu">Géneros</li>
+              <li class="li-menu">Mis películas preferidas</li>
+            </div>
+            <div class="menu-2">
+              <li class="li-menu">Iniciar sesión</li>
+              <li class="li-menu">Buscar</li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="carrousel">
+          <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+
+            <ul class="uk-slideshow-items populares listacarrousel" >
+
+
+            </ul>
+
+            <div class="uk-light">
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+
+          </div>
+        </section>
+        <section class="carrousel2" >
+          <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+
+            <ul class="uk-slideshow-items toprated listacarrousel">
+
+
+            </ul>
+
+            <div class="uk-light">
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+
+          </div>
+        </section>
+        <section class="carrousel3">
+          <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+
+            <ul class="uk-slideshow-items upcoming listacarrousel">
+
+
+            </ul>
+
+            <div class="uk-light">
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+
+          </div>
+        </section>
+      </main>
+      <footer>
+          <ul class="ul-menu" type="none">
+            <div class="logoTMDB">
+                <li class="lifooter"></li>
+            </div>
+          </ul>
+          <ul class="nombres" type="none">
+            <div class="nombres">
+              <li class="lifooter">Catalina Cardona y Federico Koch</li>
+            </div>
+          </ul>
+      </footer>
+    </div>
+    <script src="../javascript/appPI.js"></script>
+
+  </body>
+</html>
