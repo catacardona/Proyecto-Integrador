@@ -14,7 +14,12 @@ window.onload = function(){
         var titulo = arrayPeliculasPopulares[i].title
         var url= arrayPeliculasPopulares[i].poster_path
 
-        document.querySelector('.populares').innerHTML += '<li><img src="https://image.tmdb.org/t/p/w500' + url + '" alt="" uk-cover><div class="uk-position-center uk-position-small uk-text-center uk-light"><h2 class="uk-margin-remove">' + titulo + '</h2></div></li>'
+        // <li>
+        //     <img src="images/slider1.jpg" alt="">
+        //     <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        // </li>
+
+        document.querySelector('ul.populares').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){
@@ -38,7 +43,7 @@ window.onload = function(){
         var titulo = arrayMejorPuntaje[i].title
         var url= arrayMejorPuntaje[i].poster_path
 
-        document.querySelector('.toprated').innerHTML += '<li><img src="https://image.tmdb.org/t/p/w500' + url + '" alt="" uk-cover><div class="uk-position-center uk-position-small uk-text-center uk-light"><h2 class="uk-margin-remove">' + titulo + '</h2></div></li>'
+        document.querySelector('ul.toprated').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "'' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){
@@ -60,7 +65,7 @@ window.onload = function(){
         var titulo = arrayProximosEstrenos[i].title
         var url= arrayProximosEstrenos[i].poster_path
 
-        document.querySelector('.upcoming').innerHTML += '<li><img src="https://image.tmdb.org/t/p/w500' + url + '" alt="" uk-cover><div class="uk-position-center uk-position-small uk-text-center uk-light"><h2 class="uk-margin-remove">' + titulo + '</h2></div></li>'
+        document.querySelector('ul.upcoming').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "'' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){
