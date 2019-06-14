@@ -1,5 +1,4 @@
 window.onload = function(){
-
   fetch("https://api.themoviedb.org/3/movie/popular?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US&page=1")
     .then(function(respuesta) {
       return respuesta.json()

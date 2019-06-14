@@ -1,4 +1,5 @@
 window.onload = function(){
+
   var urlParams = new URLSearchParams(window.location.search);
 
   var query = urlParams.get('idDeGenero');
@@ -29,4 +30,5 @@ window.onload = function(){
     .catch(function(error){
       console.log("Error" + error);
     })
+
 }
