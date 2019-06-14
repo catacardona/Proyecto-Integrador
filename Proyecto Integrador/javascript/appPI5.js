@@ -1,33 +1,24 @@
-window.onload = function(){
+window.addEventListener("load", function() {
 
+// trailer
   var urlParams = new URLSearchParams(window.location.search);
+  var query = urlParams.get('id');
 
-  var query = urlParams.get('idDeGenero');
 
-  fetch("https://api.themoviedb.org/3/movie/{movie_id}?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US")
+// detalle
+  fetch("https://api.themoviedb.org/3/movie/" + query + "?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US")
     .then(function(respuesta) {
       return respuesta.json()
     })
     .then(function(informacion){
       console.log(informacion);
+      var una_pelicula = document.querySelector(".una_pelicula")
+      una_pelicula.innerHTML = "<h1>" + informacion.title + "</h1>"
+      una_pelicula.innerHTML = "<h2> <img src='https://image.tmdb.org/t/p/w500" + informacion.poster_path +"'alt=''</h2>"
 
-      var arrayPeliculasPorGenero = informacion.results
-      console.log(arrayPeliculasPorGenero);
-
-      for (var i = 0; i < arrayPeliculasPorGenero.length; i++) {
-        var id = arrayPeliculasPorGenero[i].id
-        var titulo = arrayPeliculasPorGenero[i].title
-        var url= arrayPeliculasPorGenero[i].poster_path
-
-        // <li>
-        //     <img src="images/slider1.jpg" alt="">
-        //     <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        // </li>
-
-        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
-      }
     })
     .catch(function(error){
       console.log("Error" + error);
     })
-}
+
+})
