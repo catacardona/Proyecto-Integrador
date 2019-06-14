@@ -141,3 +141,7 @@ main ul p {
 ul li.generos2:hover {
 	text-decoration: underline;
 }
+
+ul.generos {
+  font-family: Arial;
+}
