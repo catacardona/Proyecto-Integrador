@@ -24,7 +24,7 @@ window.onload = function(){
         //     <div class="uk-position-center uk-panel"><h1>1</h1></div>
         // </li>
 
-        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
+        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><a href='pagina5.html?id=" + id + "'><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){

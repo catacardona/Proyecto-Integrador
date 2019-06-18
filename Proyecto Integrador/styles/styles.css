@@ -156,5 +156,23 @@ div.contenedorCarrousel:nth-child(3n) {
 }
 
 section.carrousel {
+  width: 50%;
+}
+
+main.una_pelicula {
+  width: 50%;
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+section.carrouselPagina3 {
   width: 75%;
+  margin-top: 60px;
+  margin-left: 180px;
 }
