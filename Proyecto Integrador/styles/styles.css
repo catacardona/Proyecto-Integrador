@@ -185,6 +185,18 @@ section.carrouselPagina3 {
   margin-left: 225px;
 }
 
-a {
+header a, main a {
   font-family: Arial;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover, main a:hover {
+  font-family: Arial;
+  text-decoration: none;
+  color: white;
+}
+
+main a:hover {
+  text-decoration: underline;
 }

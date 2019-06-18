@@ -43,7 +43,7 @@ window.onload = function(){
         var titulo = arrayMejorPuntaje[i].title
         var url= arrayMejorPuntaje[i].poster_path
 
-        document.querySelector('ul.toprated').innerHTML += "<li><a href='pagina5.html?id=" + id + "'><img src='https://image.tmdb.org/t/p/w500" + url + "'' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
+        document.querySelector('ul.toprated').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "'' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){
@@ -65,7 +65,7 @@ window.onload = function(){
         var titulo = arrayProximosEstrenos[i].title
         var url= arrayProximosEstrenos[i].poster_path
 
-        document.querySelector('ul.upcoming').innerHTML += "<li><a href='pagina5.html?id=" + id + "'><img src='https://image.tmdb.org/t/p/w500" + url + "'' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
+        document.querySelector('ul.upcoming').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "'' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){
