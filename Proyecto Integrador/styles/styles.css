@@ -150,3 +150,11 @@ div.hola {
   font-size: 20px;
   font-weight: bold;
 }
+
+div.contenedorCarrousel:nth-child(3n) {
+  padding-bottom: 70px;
+}
+
+section.carrousel {
+  width: 75%;
+}

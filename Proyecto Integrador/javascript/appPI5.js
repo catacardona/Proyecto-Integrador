@@ -15,6 +15,9 @@ window.addEventListener("load", function() {
       var una_pelicula = document.querySelector(".una_pelicula")
       una_pelicula.innerHTML = "<h1>" + informacion.title + "</h1>"
       una_pelicula.innerHTML = "<h2> <img src='https://image.tmdb.org/t/p/w500" + informacion.poster_path +"'alt=''</h2>"
+      una_pelicula.innerHTML = "<p>" + informacion.release_date + "</p>"
+      una_pelicula.innerHTML = "<p>" + informacion.original_language + "</p>"
+      
 
     })
     .catch(function(error){
