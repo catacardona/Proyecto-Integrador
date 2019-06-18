@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
   var urlParams = new URLSearchParams(window.location.search);
   var query = urlParams.get('id');
 
+  fetch("https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US")
 
 // detalle
   fetch("https://api.themoviedb.org/3/movie/" + query + "?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US")

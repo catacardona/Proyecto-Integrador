@@ -151,12 +151,20 @@ div.hola {
   font-weight: bold;
 }
 
-div.contenedorCarrousel:nth-child(3n) {
+div.contenedorCarrousel3{
   padding-bottom: 70px;
 }
 
+div.contenedorCarrousel1 {
+  padding-bottom: 10px;
+}
+
+div.contenedorCarrousel2 {
+  padding-bottom: 10px;
+}
+
 section.carrousel {
-  width: 50%;
+  width: 70%;
 }
 
 main.una_pelicula {
@@ -172,7 +180,11 @@ h2 {
 }
 
 section.carrouselPagina3 {
-  width: 75%;
-  margin-top: 60px;
-  margin-left: 180px;
+  width: 70%;
+  margin-top: 80px;
+  margin-left: 225px;
+}
+
+a {
+  font-family: Arial;
 }
