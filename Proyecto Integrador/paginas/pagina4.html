@@ -25,13 +25,41 @@
               <li class="li-menu"><a href="pagina6.html">Mis películas preferidas</a></li>
             </div>
             <div class="menu-2">
-              <li class="li-menu">Iniciar sesión</li>
+              <li class="li-menu"></li>
               <li class="li-menu">
                 <form class="" action="pagina4.html" method="post">
                   <input type="search" name="" value="" placeholder="Buscar">
                 </form>
 
               </li>
+              <a class="uk-button uk-button-default" href="#modal-container" uk-toggle>Iniciar Sesión</a>
+
+            <div id="modal-container" class="uk-modal-container" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Iniciar Sesión</h2>
+
+        <form class="Name" action="index.html" method="post">
+          <label for="Nombre"></label>Nombre
+          <input id= "nombre" type="text" name="nombre" value="" required>
+          </form>
+          <br>
+          <br>
+          <form class="email" action="index.html" method="post">
+            <label for="email"></label>Email
+            <input id= "email" type="email" name="email" value="" required></form>
+            <br>
+            <br>
+            <form class="genero" action="index.html" method="post">Género
+            <select class="" name=""><option value="M">Masculino
+            </option>
+            <option value="F">Femenino</option>
+            <option value="O">Otro</option>
+            </select>
+            </form>
+            <br>
+            <br>
+            <button type="submit" name="button">Ingresar</button>
             </div>
           </ul>
         </nav>

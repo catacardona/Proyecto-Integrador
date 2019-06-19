@@ -200,3 +200,26 @@ header a:hover, main a:hover {
 main a:hover {
   text-decoration: underline;
 }
+
+
+form {
+  color: black;
+}
+
+a.uk-button {
+  color: white;
+  font-family: Arial;
+}
+
+a.uk-button:hover {
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+
+  
+
+}

@@ -1,4 +1,5 @@
 window.addEventListener('load', function(){
+
   var form = document.querySelector(".form-buscador")
 
   form.onsubmit = function(evento) {
@@ -7,5 +8,7 @@ window.addEventListener('load', function(){
     console.log(buscador.value);
     window.location = 'pagina4.html?busqueda=' + buscador.value
   }
+
+})
 
 })
