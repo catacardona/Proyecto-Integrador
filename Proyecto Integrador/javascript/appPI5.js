@@ -20,10 +20,49 @@ window.addEventListener("load", function() {
       una_pelicula.innerHTML += "<h2>" + informacion.original_language + "</h2>"
       una_pelicula.innerHTML += "<h2>" + informacion.overview + "</h2>"
       una_pelicula.innerHTML += "<h2>" + informacion.genres + "</h2>"
+      una_pelicula.innerHTML += "<button id='botonFavorito' name='"+informacion.id+"' class='estrellita'> &#9733; </button> "
+
+
+
+
+      // alert("pelis prefe")
+
+      var arrayPelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
+
+      // function agregarFavoritos(id) {
+        var boton = document.querySelector("#botonFavorito")
+        console.log(boton.name);
+        boton.addEventListener("click",function(){
+
+          alert("me clickearon!")
+
+          if (arrayPelisFavoritas == null) {
+            arrayPelisFavoritas = []
+            arrayPelisFavoritas.push(boton.name)
+            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+
+          }else if(arrayPelisFavoritas.indexOf(boton.name)===-1){
+
+            arrayPelisFavoritas.push(boton.name)
+            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+
+          } else {
+            console.log(arrayPelisFavoritas.indexOf(boton.name));
+            arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(boton.name),1);
+            console.log(arrayPelisFavoritas)
+            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+          }
+
+          console.log(boton.name);
+          console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+
+        })
+
 
     })
     .catch(function(error){
       console.log("Error" + error);
     })
+
 
 })

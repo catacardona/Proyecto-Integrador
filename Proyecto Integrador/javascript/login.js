@@ -18,27 +18,27 @@ window.addEventListener("load",function() {
 
 
 
-var arrayPelisFavoritas = []
-
-function agregarFavoritos(id) {
-  alert("me clickearon!")
-
-  if (arrayPelisFavoritas.indexOf(id)===-1){
-
-  arrayPelisFavoritas.push(id)
-  window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-
-  } else {
-
-    console.log(arrayPelisFavoritas.indexOf(id));
-    arrayPelisFavoritas.splice((arrayPelisFavoritas.indexOf(id),1));
-    console.log(arrayPelisFavoritas)
-    window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-  }
-
-  console.log(id);
-  console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
-
-}
+// var arrayPelisFavoritas = []
+//
+// function agregarFavoritos(id) {
+//   alert("me clickearon!")
+//
+//   if (arrayPelisFavoritas.indexOf(id)===-1){
+//
+//   arrayPelisFavoritas.push(id)
+//   window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+//
+//   } else {
+//
+//     console.log(arrayPelisFavoritas.indexOf(id));
+//     arrayPelisFavoritas.splice((arrayPelisFavoritas.indexOf(id),1));
+//     console.log(arrayPelisFavoritas)
+//     window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+//   }
+//
+//   console.log(id);
+//   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+//
+// }
 
 })

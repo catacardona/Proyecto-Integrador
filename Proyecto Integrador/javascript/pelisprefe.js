@@ -1,30 +1,31 @@
 window.addEventListener("load",function() {
 
 
-  arrayPelisFavoritas = (JSON.parse(window.sessionStorage.getItem("favorita"));
 
-  if (arrayPelisFavoritas.length>0) {
+  var arrayPelisFavoritas = (JSON.parse(window.sessionStorage.getItem("favorita")))
+  console.log(arrayPelisFavoritas);
+  if (arrayPelisFavoritas != null) {
 
     for (var i = 0; i < arrayPelisFavoritas.length; i++) {
-      arrayPelisFavoritas[i]
 
 
-    var url = "" + arrayPelisFavoritas[i]
+
+    var url = "https://api.themoviedb.org/3/movie/"+ arrayPelisFavoritas[i].id +"?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US" + arrayPelisFavoritas[i]
     var urlImg= "http://image.tmdb.org/t/p/original"
 
     fetch(url)
     .then(function(respuesta){
       return respuesta.json()
     })
-   .then(function(informacion)) {
+   .then(function(informacion) {
      console.log(informacion)
-     var ul = document.querySelector("section ul") (crear un ul en html)
+     var ul = document.querySelector("section ul")
      var li;
 
      li = "<li>"
      li += "<a href=''></a>"
-     li += "<h2>"+pelicula.title+"</h2>"
-     li += "<img src=''" +urlImg+ pelicula.poster_path + "'>"
+     li += "<h2>"+informacion.title+"</h2>"
+     li += "<img src='" +urlImg+ informacion.poster_path + "'>"
      li += "</a>"
      li+= "</li>"
 
@@ -33,11 +34,15 @@ window.addEventListener("load",function() {
    })
 
 
+   .catch(function(error){
+     console.log("Error" + error);
+   })
 
 }
 
-})
+}else {
+  // alert('No tenes pelis favoritas')
+}//termina el if
 
-.catch(function(error){
-  console.log("Error" + error);
-})
+
+})//windows on load
