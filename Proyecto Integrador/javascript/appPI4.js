@@ -27,6 +27,9 @@ window.onload = function(){
         // </li>
 
         document.querySelector('ul.peliculas').innerHTML += "<li><a href='pagina5.html?id=" + id + "'><img src='https://image.tmdb.org/t/p/w500" + url2 +"' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
+        if (arrayPeliculas = null){
+          document.querySelector('ul.peliculas').innerHTML += "<li><img src='../imagenes/contenido-no-disponible.jpg'><div class='uk-position-center uk-panel'></h2></div></li>"
+        }
       }
     })
     .catch(function(error){
