@@ -14,15 +14,14 @@ window.addEventListener("load", function() {
     .then(function(informacion){
       console.log(informacion);
       var una_pelicula = document.querySelector(".una_pelicula")
-      una_pelicula.innerHTML = "<h1>" + informacion.title + "</h1>"
-<<<<<<< HEAD
-      una_pelicula.innerHTML += "<h2> <img src='https://image.tmdb.org/t/p/w500" + informacion.poster_path +"'alt=''</h2>"
-      una_pelicula.innerHTML += "<h2>" + informacion.release_date + "</h2>"
-      una_pelicula.innerHTML += "<h2>" + informacion.original_language + "</h2>"
-      una_pelicula.innerHTML += "<h2>" + informacion.overview + "</h2>"
-      una_pelicula.innerHTML += "<h2>" + informacion.genres + "</h2>"
-      una_pelicula.innerHTML += "<button id='botonFavorito' name='"+informacion.id+"' class='estrellita'> &#9733; </button> "
-
+      una_pelicula.innerHTML = "<h1>" + informacion.title +"</h1>"
+      una_pelicula.innerHTML += "<button id='botonFavorito' name='"+informacion.id+"' class='estrellita'> &#9733; </button>"
+      una_pelicula.innerHTML += "<h2> <img src='https://image.tmdb.org/t/p/w500" + informacion.poster_path +"'alt=''<h2>"
+      una_pelicula.innerHTML += "<h2>" + 'Sinopsis:' + " " + informacion.overview + "</h2>"
+      una_pelicula.innerHTML += "<h2>" + 'Generos a los que pertence:' + " " + informacion.genres + "</h2>"
+      una_pelicula.innerHTML += "<h2>" + 'Lenguaje original:' + " " + informacion.original_language + "</h2>"
+      una_pelicula.innerHTML += "<h2>" + 'Fecha de estreno:' + " " + informacion.release_date + "</h2>"
+      
 
 
 
@@ -34,8 +33,6 @@ window.addEventListener("load", function() {
         var boton = document.querySelector("#botonFavorito")
         console.log(boton.name);
         boton.addEventListener("click",function(){
-
-          alert("me clickearon!")
 
           if (arrayPelisFavoritas == null) {
             arrayPelisFavoritas = []
@@ -59,13 +56,6 @@ window.addEventListener("load", function() {
 
         })
 
-=======
-      una_pelicula.innerHTML += "<h2> <img src='https://image.tmdb.org/t/p/w500" + informacion.poster_path +"'alt=''<h2>"
-      una_pelicula.innerHTML += "<h2>" + 'Sinopsis:' + " " + informacion.overview + "</h2>"
-      una_pelicula.innerHTML += "<h2>" + 'Generos a los que pertence:' + " " + informacion.genres + "</h2>"
-      una_pelicula.innerHTML += "<h2>" + 'Lenguaje original:' + " " + informacion.original_language + "</h2>"
-      una_pelicula.innerHTML += "<h2>" + 'Fecha de estreno:' + " " + informacion.release_date + "</h2>"
->>>>>>> master
 
     })
     .catch(function(error){

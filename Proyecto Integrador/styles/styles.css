@@ -64,9 +64,7 @@ nav ul li.logo {
   background-size: cover;
   width: 150px;
 }
-nav ul.ul-menu {
-  margin-left:
-}
+
 nav ul li a {
   text-decoration: none;
 }
@@ -222,11 +220,26 @@ a.uk-button:hover {
 }
 
 @media screen and (max-width:768px) {
-
-
-
+  nav ul li.logo {
+    width: 100px;
+  }
+  div.hola{
+    font-size: 15px;
+  }
+  div.menu-1 {
+    font-size: 10px;
+    float: left;
+  }
 }
 
 ul.generos {
   padding-bottom: 70px;
+}
+
+
+section.carrouselpag4 {
+  width: 70%;
+    margin: 0 auto;
+  margin-top: 80px;
+
 }

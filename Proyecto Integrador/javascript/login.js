@@ -14,8 +14,11 @@ window.addEventListener("load",function() {
     console.log(genero);
     sessionStorage.setItem("genero",genero)
     sessionStorage.getItem("genero")
-    document.querySelector(".nombre").innerHTML= 'Bienvenido("+ name +")'
+    var usuario= document.querySelector(".nombre")
+    usuario.innerHTML= nombre.value
+
   })
+
 
 
 

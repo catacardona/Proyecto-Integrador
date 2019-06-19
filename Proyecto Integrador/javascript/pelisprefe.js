@@ -10,7 +10,7 @@ window.addEventListener("load",function() {
 
 
 
-    var url = "https://api.themoviedb.org/3/movie/"+ arrayPelisFavoritas[i].id +"?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US" + arrayPelisFavoritas[i]
+    var url = "https://api.themoviedb.org/3/movie/"+ arrayPelisFavoritas[i].id +"?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US" + arrayPelisFavoritas[i]"
     var urlImg= "http://image.tmdb.org/t/p/original"
 
     fetch(url)
