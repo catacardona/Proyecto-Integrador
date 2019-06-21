@@ -14,14 +14,15 @@ window.addEventListener("load", function() {
     })
     .then(function(data){
       console.log(data);
-      console.log(data.status_code);
+      // console.log(data.status_code);
         var trailer = data.results[0].api_key
         urlTrailer = '<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        document.querySelector('ul.recomendaciones').innerHTML += "<h2>" + urlTrailer + "</h2>"
     })
-    .catch(function(error){
-      console.log(error);
-      return console.log("Error" + error);
-    })
+    // .catch(function(error){
+    //   console.log(error);
+    //   return console.log("Error" + error);
+    // })
 
 // detalle
   fetch("https://api.themoviedb.org/3/movie/" + query + "?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US")
