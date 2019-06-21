@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,39 +25,46 @@
               <li class="li-menu"><a href="pagina6.html">Mis películas preferidas</a></li>
             </div>
             <div class="menu-2">
-                <li class="li-menu">
-                  <form class="form-buscador" action="pagina4.html" method="post">
-                    <input id="input-buscador" type="search" name="" placeholder="Buscar">
-                  </form>
-                </li>
+              <li class="li-menu">
+                <form class="form-buscador" action="pagina4.html" method="get">
+                  <input id="input-buscador" type="search" name="busqueda" placeholder="Buscar">
+                </form>
+
+              </li>
                 <li class="li-menu">
                   <a class="uk-button uk-button-default" href="#modal-container" uk-toggle>Iniciar Sesión</a>
                 </li>
-                <div id="modal-container" class="uk-modal-container" uk-modal>
-                  <div class="uk-modal-dialog uk-modal-body">
+                        <div id="modal-container" class="uk-modal-container" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
                     <button class="uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title">Iniciar Sesión</h2>
 
-                    <form class="form" action="index.html" method="get">
-                        <label for="Nombre"></label>Nombre
-                        <input id= "nombre" type="text" name="nombre" value="" required>
-                        <br>
-                        <br>
+                    <form class="form" action="index.html" method="post"  >
+                      <label for="Nombre"></label>Nombre
+                      <input id= "nombre" type="text" name="nombre" value="" required>
+                      <br>
+                      <br>
+
                         <label for="email"></label>Email
                         <input id= "email" type="email" name="email" value="" required>
                         <br>
                         <br>
-                        <select class="" name="genero">
+                        Género
+                        <select class="" name="gender">
                           <option value="M">Masculino</option>
                           <option value="F">Femenino</option>
                           <option value="O">Otro</option>
                         </select>
                         <br>
                         <br>
-                        <button type="submit" >Ingresar</button>
+                        <button type="submit" name="button" class="boton-login">Ingresar</button>
                       </form>
-                    </div>
+
+
                 </div>
+            </div>
+
+            </a>
             </div>
           </ul>
         </nav>
@@ -83,6 +90,5 @@
       </footer>
       </div>
       <script src="../javascript/appPI2.js"></script>
-        <script src="../javascript/buscador.js" charset="utf-8"></script> 
   </body>
 </html>

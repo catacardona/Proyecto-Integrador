@@ -9,10 +9,10 @@ body {
   font-size: 12px;
   color: white;
   background-color: #2d2f33;
-  height: 100vh;
+  height: 100%;
 }
 
-main {
+.html {
   background-color: #2d2f33;
 }
 .principal {
@@ -158,6 +158,7 @@ div.contenedorCarrousel3{
 
 div.contenedorCarrousel1 {
   padding-bottom: 10px;
+  height: 480px;
 }
 
 div.contenedorCarrousel2 {
@@ -172,6 +173,32 @@ main.una_pelicula {
   width: 95%;
   margin-bottom: 90px;
   margin-left: 15px;
+  color: white;
+  background-color: #2d2f33;
+}
+
+main.una_pelicula h1 {
+  color: white;
+  background-color: #2d2f33;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+main.una_pelicula h2 {
+  color: white;
+  background-color: #2d2f33;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+main.una_pelicula h2 img{
+  width: 300px;
+}
+ul.recomendaciones {
+  color: white;
+  background-color: #2d2f33;
+  font-size: 18px;
+  font-family: Arial;
 }
 
 h2 {
@@ -218,20 +245,6 @@ a.uk-button:hover {
   font-family: Arial;
   font-weight: bold;
 }
-
-@media screen and (max-width:768px) {
-  nav ul li.logo {
-    width: 100px;
-  }
-  div.hola{
-    font-size: 15px;
-  }
-  div.menu-1 {
-    font-size: 10px;
-    float: left;
-  }
-}
-
 ul.generos {
   padding-bottom: 70px;
 }
@@ -242,4 +255,140 @@ section.carrouselpag4 {
     margin: 0 auto;
   margin-top: 80px;
 
+}
+
+section.carrouselPagina3 {
+    width: 85%;
+    margin-bottom: 100px;
+    margin-left: 85px;
+}
+main.main4{
+    width: 85%;
+    margin-bottom: 100px;
+    margin-left: 85px;
+}
+
+ul.ul5 li h2{
+  color: white;
+  background-color: #2d2f33;
+  font-family: Arial;
+  font-size: 20px;
+  list-style: none;
+}
+
+ul.ul5 li img{
+  width: 300px;
+}
+
+ul.peliculasporgenero {
+  margin-bottom: -200px;
+  margin-left: -40px;
+}
+
+main.main6 {
+  margin-top: -35px;
+}
+
+ul.ul5 img {
+  margin-bottom: 80px;
+}
+
+ul.recomendaciones li a img {
+  width: 30%;
+}
+
+ul.recomendaciones li a img:last-child {
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width:800px) {
+
+  ul.ul5 li h2{
+    color: white;
+    background-color: #2d2f33;
+    font-family: Arial;
+    font-size: 15px;
+    list-style: none;
+  }
+
+  ul.ul5 li img{
+    width: 250px;
+  }
+li.li-menu {
+  font-size: 10px;
+}
+  nav ul li.logo {
+    width: 50px;
+  }
+  div.hola{
+    font-size: 15px;
+  }
+  div.menu-1 {
+    font-size: 10px;
+    float: left;
+  }
+  div.contenedorCarrousel1 {
+    height: 200px;
+  }
+  ul.recomendaciones {
+    color: white;
+    background-color: #2d2f33;
+    font-size: 15px;
+    font-family: Arial;
+    margin-bottom: 90px;
+  }
+  main.una_pelicula {
+    width: 95%;
+    margin-left: 15px;
+    color: white;
+    background-color: #2d2f33;
+  }
+
+  main.una_pelicula h1 {
+    color: white;
+    background-color: #2d2f33;
+    font-family: Arial;
+    font-size: 20px;
+  }
+
+  main.una_pelicula h2 {
+    color: white;
+    background-color: #2d2f33;
+    font-family: Arial;
+    font-size: 16px;
+  }
+
+  main.una_pelicula h2 img{
+    width: 250px;
+  }
+
+  header div.menu-2 {
+    top: 200px;
+    font-size: 10px;
+    z-index: 10;
+    color: white;
+  }
+  div.contenedorCarrousel {
+    width: 85%;
+    margin-left: -25px;
+  }
+  main.main6 {
+    margin-top: -35px;
+  }
+  ul.ul5 img {
+    margin-bottom: 80px;
+  }
+  li.lifooter {
+    margin-left: -15px;
+  }
+
+  footer div.logoTMDB {
+    display: block;
+  }
+  footer div.nombres {
+    display: block;
+  }
+  ul.recomendaciones li a img {
+    margin-bottom: -70px;
+  }
 }

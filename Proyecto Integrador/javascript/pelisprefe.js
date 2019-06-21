@@ -1,18 +1,20 @@
 window.addEventListener("load",function() {
 
 
-
+  //parse cambia string a objeto literal
   var arrayPelisFavoritas = (JSON.parse(window.sessionStorage.getItem("favorita")))
   console.log(arrayPelisFavoritas);
+
+
   if (arrayPelisFavoritas != null) {
 
     for (var i = 0; i < arrayPelisFavoritas.length; i++) {
 
+      console.log(111);
 
-
-    var url = "https://api.themoviedb.org/3/movie/"+ arrayPelisFavoritas[i].id +"?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US" + arrayPelisFavoritas[i]"
+    var url = "https://api.themoviedb.org/3/movie/"+ arrayPelisFavoritas[i] +"?api_key=0c400c447b681b6753c82605b0973bd4&language=en-US"
     var urlImg= "http://image.tmdb.org/t/p/original"
-
+    console.log(url);
     fetch(url)
     .then(function(respuesta){
       return respuesta.json()
